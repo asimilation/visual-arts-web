@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Arts Event Solutions | LED Ekran & Sahne Teknik Hizmetleri</title>
+  <meta name="description" content="Etkinlikleriniz için profesyonel LED ekran kiralama, sahne teknik hizmetleri, dijital müze kurulumları ve ışık tasarımı. Visual Arts Event Solutions, İstanbul.">
+  <meta property="og:title" content="Visual Arts Event Solutions">
+  <meta property="og:description" content="LED ekran kiralama, sahne teknik hizmetleri, dijital müze kurulumu ve timecode ışık show çözümleri.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230098FF'/><rect x='4' y='7' width='24' height='15' rx='2' fill='none' stroke='%23fff' stroke-width='2'/><rect x='7' y='10' width='6' height='6' rx='1' fill='%23fff'/><rect x='19' y='10' width='6' height='6' rx='1' fill='%23fff'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Altly.ai Design Tokens ──────────────────────── */
+    :root {
+      --blue:    #0098FF;
+      --blue-dk: #007ACC;
+      --blue-lt: #E8F4FF;
+      --base:    #1A1A1A;
+      --mid:     #555565;
+      --muted:   #9999AA;
+      --light:   #ffffff;
+      --section: #F6F8FC;
+      --border:  #E2E6EC;
+      --shadow-sm:  0 1px 4px rgba(0,0,0,.06), 0 2px 12px rgba(0,0,0,.04);
+      --shadow-md:  0 4px 20px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.04);
+      --shadow-lg:  0 12px 48px rgba(0,0,0,.1),  0 2px 8px rgba(0,0,0,.05);
+      --shadow-blue: 0 4px 24px rgba(0,152,255,.25);
+
+      /* Match altly.ai fluid sizes exactly */
+      --fs-xs:     clamp(14px, 0.875rem + ((1vw - 3.75px) * 0.242), 16px);
+      --fs-sm:     clamp(16px, 1rem     + ((1vw - 3.75px) * 0.242), 18px);
+      --fs-base:   clamp(18px, 1.125rem + ((1vw - 3.75px) * 0.485), 22px);
+      --fs-lg:     clamp(25px, 1.563rem + ((1vw - 3.75px) * 0.848), 32px);
+      --fs-xl:     clamp(25px, 1.563rem + ((1vw - 3.75px) * 2.424), 45px);
+      --fs-2xl:    clamp(45px, 2.813rem + ((1vw - 3.75px) * 3.636), 75px);
+      --fs-3xl:    clamp(50px, 3.125rem + ((1vw - 3.75px) * 6.061), 100px);
+
+      --sp-20: min(1.5rem, 2vw);
+      --sp-30: min(2.5rem, 3vw);
+      --sp-40: min(4rem,   5vw);
+      --sp-50: min(6.5rem, 8vw);
+      --sp-60: min(10.5rem,13vw);
+
+      --max-w: 1200px;
+      --r-btn: 50px;
+      --r-card: 16px;
+      --r-lg: 24px;
+
+      --font: 'Inter', sans-serif;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ── Reset ────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      font-size: var(--fs-sm);
+      background: var(--light);
+      color: var(--base);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    ul { list-style: none; }
+
+    /* ── Container ────────────────────────────────────── */
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--sp-50);
+    }
+
+    /* ── Label ────────────────────────────────────────── */
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+
+    /* ── Buttons ──────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font);
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: var(--r-btn);
+      padding: 14px 28px;
+      transition:
+        transform .25s var(--ease-spring),
+        box-shadow .25s ease,
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+    }
+    .btn:hover  { transform: translateY(-2px); }
+    .btn:active { transform: scale(.97); }
+    .btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: var(--shadow-blue);
+    }
+    .btn-primary:hover {
+      background: var(--blue-dk);
+      box-shadow: 0 6px 32px rgba(0,152,255,.35);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--blue);
+      border: 2px solid var(--blue);
+    }
+    .btn-outline:hover { background: var(--blue-lt); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--mid);
+      border: 2px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--section); border-color: #ccc; }
+
+    .btn-ig {
+      background: linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(225,48,108,.25);
+    }
+    .btn-ig:hover { box-shadow: 0 6px 28px rgba(225,48,108,.4); }
+
+    /* ── Scroll reveal ────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s var(--ease-out), transform .65s var(--ease-out);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── NAV ──────────────────────────────────────────── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 10px 0;
+      transition: background .3s ease, box-shadow .3s ease, padding .3s ease;
+    }
+    #nav.scrolled {
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 1px 0 var(--border), 0 4px 20px rgba(0,0,0,.06);
+      padding: 6px 0;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    /* Logo SVG has black background — invert it for light theme */
+    .nav-logo img {
+      height: 88px;
+      width: auto;
+      filter: invert(1);
+      transition: transform .25s var(--ease-spring);
+    }
+    .nav-logo:hover img { transform: scale(1.04); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--mid);
+      transition: color .2s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 2px;
+      background: var(--blue);
+      border-radius: 2px;
+      transition: width .2s var(--ease-out);
+    }
+    .nav-links a:hover { color: var(--base); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 3px; }
+
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      border-radius: 8px;
+      transition: background .2s ease;
+    }
+    .hamburger:hover { background: var(--section); }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--base); border-radius: 2px;
+      transition: transform .3s var(--ease-spring), opacity .3s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(16px);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--mid);
+      transition: color .2s ease, transform .2s var(--ease-spring);
+    }
+    .mobile-menu a:hover { color: var(--blue); transform: translateX(8px); }
+
+    /* ── HERO ─────────────────────────────────────────── */
+    #hero {
+      padding-top: 128px;
+      padding-bottom: var(--sp-40);
+      background: var(--light);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Subtle blue radial glow — like altly.ai */
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+      height: 700px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,152,255,.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background: var(--blue-lt);
+      border: 1px solid rgba(0,152,255,.2);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--blue);
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp .6s var(--ease-out) .1s forwards;
+    }
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      animation: pulse 2s ease infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.4; transform:scale(.65); }
+    }
+    .hero-eyebrow-row {
+      opacity: 0;
+      animation: fadeUp .6s var(--ease-out) .1s forwards;
+    }
+    .hero-title {
+      font-size: clamp(20px, 3vw, 36px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+      color: var(--base);
+      opacity: 0;
+      animation: fadeUp .7s var(--ease-out) .2s forwards;
+    }
+    .hero-desc {
+      font-size: var(--fs-base);
+      color: var(--mid);
+      line-height: 1.6;
+      max-width: 560px;
+      margin-inline: auto;
+      opacity: 0;
+      animation: fadeUp .8s var(--ease-out) .6s forwards;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp .8s var(--ease-out) .75s forwards;
+    }
+    /* Hero: 1.png style — logo full-width with photo clip */
+    .hero-logo-clip-wrap {
+      width: 100%;
+      opacity: 0;
+      animation: fadeUp .9s var(--ease-out) .35s forwards;
+    }
+    .kaşe-photo-clip {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero-bottom {
+      text-align: center;
+      max-width: 600px;
+      margin-inline: auto;
+    }
+
+    @keyframes fadeUp  { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fadeLeft{ from{opacity:0;transform:translateX(32px)} to{opacity:1;transform:translateX(0)} }
+
+    /* ── STATS ────────────────────────────────────────── */
+    #stats {
+      background: var(--section);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: var(--sp-30) 0;
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .stat-item {
+      text-align: center;
+      padding: 28px 16px;
+      position: relative;
+    }
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0; top: 20%; height: 60%; width: 1px;
+      background: var(--border);
+    }
+    .stat-num {
+      font-size: var(--fs-2xl);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1;
+      color: var(--base);
+      margin-bottom: 6px;
+    }
+    .stat-num em { color: var(--blue); font-style: normal; }
+    .stat-label { font-size: 14px; font-weight: 500; color: var(--muted); }
+
+    /* ── SECTION HEADER ───────────────────────────────── */
+    .section-header { margin-bottom: var(--sp-40); }
+    .section-header h2 {
+      font-size: var(--fs-2xl);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      color: var(--base);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      font-size: var(--fs-base);
+      color: var(--mid);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+    .section-header.centered { text-align: center; }
+    .section-header.centered p { margin-inline: auto; }
+
+    /* ── SERVICES ─────────────────────────────────────── */
+    #services { padding: var(--sp-50) 0; background: var(--light); }
+    .services-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+    .service-card {
+      padding: 36px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: var(--r-card);
+      box-shadow: var(--shadow-sm);
+      transition:
+        box-shadow .3s ease,
+        border-color .3s ease,
+        transform .3s var(--ease-spring);
+    }
+    .service-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(0,152,255,.25);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: grid; place-items: center;
+      margin-bottom: 20px;
+    }
+    .service-icon.blue   { background: var(--blue-lt); }
+    .service-icon.orange { background: #FFF3EC; }
+    .service-card-title {
+      font-size: var(--fs-lg);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--base);
+      margin-bottom: 12px;
+    }
+    .service-card-desc {
+      font-size: 16px;
+      color: var(--mid);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 12px; font-weight: 600;
+      padding: 5px 13px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: var(--section);
+    }
+    .tag.blue   { border-color: rgba(0,152,255,.25); color: var(--blue);  background: var(--blue-lt); }
+    .tag.orange { border-color: rgba(255,105,0,.2);  color: #E05A00;      background: #FFF3EC; }
+
+    /* ── PROCESS ──────────────────────────────────────── */
+    #process { padding: var(--sp-50) 0; background: var(--section); }
+    .process-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; position: relative; }
+    /* connector line */
+    .process-grid::before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: calc(16.6% + 26px);
+      right: calc(16.6% + 26px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue), rgba(0,152,255,.2), var(--blue));
+      border-radius: 2px;
+    }
+    .process-step {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: var(--r-card);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: box-shadow .3s ease, transform .3s var(--ease-spring);
+    }
+    .process-step:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .step-num {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+      display: grid; place-items: center;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-blue);
+    }
+    .step-content h3 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      color: var(--base);
+      margin-bottom: 8px;
+    }
+    .step-content p { font-size: 15px; color: var(--mid); line-height: 1.65; }
+
+
+    /* ── INSTAGRAM ────────────────────────────────────── */
+    #instagram {
+      padding: var(--sp-50) 0;
+      background: #06060a;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    #instagram::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 75% 15%, rgba(221,42,123,.12) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 20% 85%, rgba(81,52,163,.10) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .ig-inner { position: relative; z-index: 1; }
+    .ig-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: var(--sp-40);
+      flex-wrap: wrap;
+    }
+    .ig-top .eyebrow {
+      background: linear-gradient(135deg,#F58529,#DD2A7B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .ig-top h2 { color: #fff; font-size: var(--fs-2xl); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; }
+    .ig-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    /* Outer wrapper — holds the glow/shadow so overflow:hidden doesn't clip it */
+    .ig-post-outer {
+      position: relative;
+      border-radius: 20px;
+      transition: transform .45s var(--ease-spring);
+    }
+    .ig-post-outer:hover { transform: translateY(-10px); }
+
+    /* Ambient glow blob beneath — creates floating illusion on dark bg */
+    .ig-post-outer::after {
+      content: '';
+      position: absolute;
+      bottom: -18px;
+      left: 10%; right: 10%;
+      height: 50px;
+      background: rgba(140,80,220,.22);
+      filter: blur(28px);
+      border-radius: 50%;
+      z-index: 0;
+      transition: opacity .4s ease, filter .4s ease;
+    }
+    .ig-post-outer:hover::after {
+      opacity: 1.4;
+      filter: blur(36px);
+    }
+
+    .ig-post-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 380px;
+      background: #06060a;
+      cursor: pointer;
+      z-index: 1;
+      /* Rim light + subtle lift shadow */
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.09),
+        0 0 0 1px rgba(255,255,255,.07),
+        0 2px 6px rgba(0,0,0,.6),
+        0 10px 30px rgba(0,0,0,.55),
+        0 28px 60px rgba(0,0,0,.45);
+      transition: box-shadow .4s ease;
+    }
+    .ig-post-outer:hover .ig-post-wrap {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.12),
+        0 0 0 1px rgba(255,255,255,.10),
+        0 4px 12px rgba(0,0,0,.65),
+        0 16px 40px rgba(0,0,0,.6),
+        0 40px 80px rgba(0,0,0,.5);
+    }
+
+    /* Iframe — shifted to hide Instagram white header */
+    .ig-post-wrap iframe {
+      width: 1px;
+      min-width: 100%;
+      height: 560px;
+      margin-top: -58px;
+      border: none;
+      display: block;
+    }
+
+    /* SOLID bottom mask — exact same color as section bg, hides all Instagram UI */
+    .ig-post-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 130px;
+      background: linear-gradient(to top,
+        #06060a 0%,
+        #06060a 55%,
+        rgba(6,6,10,.7) 75%,
+        transparent 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    /* Top mask — hides header */
+    .ig-post-wrap::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 8px;
+      background: #06060a;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Hover CTA button — slides up from bottom */
+    .ig-post-hover {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      z-index: 4;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity .3s ease;
+      pointer-events: none;
+    }
+    .ig-post-outer:hover .ig-post-hover { opacity: 1; }
+    .ig-post-hover a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 20px;
+      border-radius: 50px;
+      background: linear-gradient(135deg,#F58529,#DD2A7B);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--font);
+      text-decoration: none;
+      pointer-events: auto;
+      box-shadow: 0 4px 20px rgba(221,42,123,.5);
+      transform: translateY(8px);
+      transition: transform .35s var(--ease-spring), box-shadow .2s ease;
+    }
+    .ig-post-outer:hover .ig-post-hover a { transform: translateY(0); }
+    .ig-post-hover a:hover { box-shadow: 0 6px 28px rgba(221,42,123,.7); }
+    .ig-cta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .ig-handle-display {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .ig-avatar-ring {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);
+      padding: 2px;
+      flex-shrink: 0;
+    }
+    .ig-avatar-inner {
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      background: #0D0D0D;
+      display: grid; place-items: center;
+    }
+    .ig-name { font-size: 15px; font-weight: 700; color: #fff; }
+    .ig-sub { font-size: 12px; color: rgba(255,255,255,.5); margin-top: 2px; }
+    .btn-ig-follow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: 50px;
+      font-size: 15px; font-weight: 700;
+      font-family: var(--font);
+      background: linear-gradient(135deg,#F58529,#DD2A7B);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity .2s ease, transform .25s var(--ease-spring), box-shadow .2s ease;
+      box-shadow: 0 4px 20px rgba(221,42,123,.4);
+    }
+    .btn-ig-follow:hover {
+      opacity: .9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(221,42,123,.5);
+    }
+    .btn-ig-follow:active { transform: scale(.97); }
+    .btn-ig-set {
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 13px; font-weight: 600;
+      font-family: var(--font);
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.6);
+      border: 1px solid rgba(255,255,255,.12);
+      cursor: pointer;
+      transition: background .2s ease, color .2s ease;
+    }
+    .btn-ig-set:hover { background: rgba(255,255,255,.14); color: #fff; }
+    @media (max-width: 1024px) {
+      .ig-grid { grid-template-columns: repeat(2, 1fr); }
+      .ig-post-outer:nth-child(n+5) { display: none; }
+    }
+    @media (max-width: 600px) {
+      .ig-grid { grid-template-columns: 1fr; }
+      .ig-post-outer:nth-child(n+4) { display: none; }
+    }
+
+    /* ── MODAL ────────────────────────────────────────── */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.4);
+      backdrop-filter: blur(6px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 40px;
+      width: 100%;
+      max-width: 460px;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px; right: 16px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--section);
+      color: var(--mid);
+      display: grid; place-items: center;
+      font-size: 18px;
+      transition: background .2s ease, color .2s ease;
+    }
+    .modal-close:hover { background: var(--border); color: var(--base); }
+    .modal h3 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--base);
+      margin-bottom: 8px;
+    }
+    .modal > p { font-size: 14px; color: var(--mid); line-height: 1.65; margin-bottom: 28px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+    .form-group label { font-size: 13px; font-weight: 600; color: var(--mid); }
+    .form-group input {
+      background: var(--light);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--base);
+      font-family: var(--font);
+      font-size: 15px;
+      transition: border-color .2s ease, box-shadow .2s ease;
+      outline: none;
+    }
+    .form-group input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,152,255,.12); }
+    .form-group input::placeholder { color: var(--muted); }
+    .modal-actions { display: flex; gap: 12px; }
+    .modal-actions .btn { flex: 1; justify-content: center; }
+
+    /* ── FAQ ──────────────────────────────────────────── */
+    #faq { padding: var(--sp-50) 0; background: var(--light); }
+    .faq-list { max-width: 720px; margin-inline: auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; text-align: left;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 16px; font-weight: 600;
+      color: var(--base);
+      font-family: var(--font);
+      transition: color .2s ease;
+    }
+    .faq-question:hover { color: var(--blue); }
+    .faq-question:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 3px; }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--section);
+      display: grid; place-items: center;
+      transition: transform .3s var(--ease-spring), border-color .2s ease, background .2s ease;
+    }
+    .faq-question[aria-expanded="true"] .faq-icon {
+      transform: rotate(45deg);
+      border-color: var(--blue);
+      background: var(--blue-lt);
+    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s var(--ease-out), padding .3s ease; }
+    .faq-answer.open { max-height: 400px; padding-bottom: 20px; }
+    .faq-answer p { font-size: 15px; color: var(--mid); line-height: 1.75; }
+
+    /* ── CTA ──────────────────────────────────────────── */
+    #cta { padding: var(--sp-50) 0; background: var(--section); }
+    .cta-box {
+      background: var(--blue);
+      border-radius: var(--r-lg);
+      padding: 80px var(--sp-50);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 64px rgba(0,152,255,.3);
+    }
+    /* Subtle pattern on CTA */
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,.06) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .cta-box .eyebrow { color: rgba(255,255,255,.7); position: relative; }
+    .cta-box h2 {
+      font-size: var(--fs-2xl);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .cta-box > p {
+      font-size: var(--fs-base);
+      color: rgba(255,255,255,.8);
+      line-height: 1.6;
+      max-width: 480px;
+      margin-inline: auto;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .cta-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .cta-box .btn-white {
+      background: #fff;
+      color: var(--blue);
+      border-radius: 50px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s var(--ease-spring), box-shadow .25s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,.12);
+    }
+    .cta-box .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+    .cta-box .btn-white-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,.5);
+      border-radius: 50px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform .25s var(--ease-spring), background .2s ease, border-color .2s ease;
+    }
+    .cta-box .btn-white-outline:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.8); transform: translateY(-2px); }
+
+    /* ── FOOTER ───────────────────────────────────────── */
+    footer {
+      background: var(--base);
+      color: rgba(255,255,255,.7);
+      padding: var(--sp-50) 0 var(--sp-30);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--sp-40);
+      margin-bottom: var(--sp-40);
+    }
+    .footer-logo {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .footer-logo img {
+      height: 52px;
+      width: auto;
+      mix-blend-mode: screen;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.45);
+      max-width: 260px;
+      margin-bottom: 24px;
+    }
+    .social-links { display: flex; gap: 10px; }
+    .social-link {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      display: grid; place-items: center;
+      color: rgba(255,255,255,.45);
+      transition: color .2s ease, background .2s ease, border-color .2s ease, transform .25s var(--ease-spring);
+    }
+    .social-link:hover { color: #fff; background: var(--blue); border-color: var(--blue); transform: translateY(-2px); }
+    .social-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .footer-col h4 {
+      font-size: 12px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 20px;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 14px; }
+    .footer-col ul li a {
+      font-size: 14px;
+      color: rgba(255,255,255,.55);
+      transition: color .2s ease, transform .2s ease;
+      display: inline-block;
+    }
+    .footer-col ul li a:hover { color: #fff; transform: translateX(4px); }
+    .footer-col ul li a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 2px; }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: var(--sp-30);
+      border-top: 1px solid rgba(255,255,255,.08);
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-bottom p { font-size: 13px; color: rgba(255,255,255,.3); }
+    .footer-bottom a { color: var(--blue); }
+    .footer-bottom a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .container { padding-inline: var(--sp-40); }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .stat-item:nth-child(2)::after { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero-logo-clip-wrap { max-width: 600px; }
+    }
+
+    @media (max-width: 768px) {
+      .container { padding-inline: 20px; }
+
+      /* Nav */
+      .nav-logo img { height: 56px; }
+      .nav-links, .nav-cta .btn-outline { display: none; }
+      .hamburger { display: flex; }
+      #nav { padding: 8px 0; }
+
+      /* Hero */
+      #hero { padding-top: 90px; padding-bottom: 40px; }
+      .hero-title { font-size: clamp(18px, 5vw, 28px); }
+      .hero-desc { font-size: 16px; }
+
+      /* Stats */
+      .stat-num { font-size: clamp(28px, 9vw, 42px); }
+      .stat-item { padding: 20px 12px; }
+      .stat-item:not(:last-child)::after { display: none; }
+
+      /* Sections */
+      .section-header h2 { font-size: clamp(30px, 8vw, 48px); }
+      .ig-top h2 { font-size: clamp(30px, 8vw, 48px); }
+
+      /* Services */
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { padding: 24px; }
+
+      /* Process */
+      .process-grid { grid-template-columns: 1fr; }
+      .process-grid::before { display: none; }
+      .process-step { padding: 24px; }
+
+      /* Instagram */
+      .ig-grid { grid-template-columns: 1fr; gap: 20px; }
+      .ig-post-outer:nth-child(n+4) { display: none; }
+      .ig-post-wrap { height: 340px; }
+      .ig-cta-row { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .btn-ig-follow { width: 100%; justify-content: center; }
+
+      /* CTA */
+      .cta-box { padding: 52px 24px; }
+      .cta-box h2 { font-size: clamp(28px, 8vw, 48px); }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding-inline: 16px; }
+
+      /* Nav */
+      .nav-logo img { height: 48px; }
+
+      /* Hero */
+      #hero { padding-top: 80px; }
+      .hero-actions, .cta-actions { flex-direction: column; }
+      .hero-actions .btn, .cta-actions .btn,
+      .cta-actions .btn-white, .cta-actions .btn-white-outline { width: 100%; justify-content: center; }
+
+      /* Stats */
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .stat-num { font-size: clamp(26px, 10vw, 36px); }
+
+      /* Instagram */
+      .ig-post-wrap { height: 300px; }
+      .ig-post-wrap iframe { height: 480px; }
+
+      /* Footer */
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand p { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="nav" role="navigation" aria-label="Ana navigasyon">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Visual Arts Event Solutions — Ana sayfa">
+          <img src="Logo.svg" alt="Visual Arts Event Solutions" width="180" height="44">
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#services">Hizmetler</a></li>
+          <li><a href="#process">Nasıl Çalışırız</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#faq">SSS</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+905388678570" class="btn btn-outline" style="padding:10px 22px;font-size:14px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+            Ara
+          </a>
+          <a href="#cta" class="btn btn-primary" style="padding:10px 22px;font-size:14px;">Teklif Al</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobil menü">
+    <a href="#services"   class="mobile-link">Hizmetler</a>
+    <a href="#process"    class="mobile-link">Nasıl Çalışırız</a>
+    <a href="#instagram"  class="mobile-link">Instagram</a>
+    <a href="#faq"        class="mobile-link">SSS</a>
+    <a href="#cta" class="btn btn-primary" style="margin-top:8px;">Teklif Al</a>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Row 1: eyebrow label -->
+          <div class="hero-eyebrow-row">
+            <span class="eyebrow">Etkinlik Teknolojisi Uzmanı</span>
+          </div>
+
+          <!-- Row 2: small headline (like "Meet" in 1.png) -->
+          <h1 class="hero-title">Tanışın</h1>
+
+          <!-- Row 3: LARGE logo with photo clipped inside (like "altly" in 1.png) -->
+          <div class="hero-logo-clip-wrap" aria-label="Visual Arts Event Solutions">
+            <svg class="kaşe-photo-clip" viewBox="0 130 500 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Visual Arts Event Solutions logosu">
+              <defs>
+                <mask id="kaseMask" maskUnits="userSpaceOnUse" x="-20" y="-10" width="560" height="520">
+                  <image href="kaşe-wide.svg" x="-20" y="-10" width="560" height="520"/>
+                </mask>
+              </defs>
+              <!-- Photo — visible through letterforms -->
+              <image
+                href="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=90"
+                x="-20" y="-10" width="560" height="520"
+                preserveAspectRatio="xMidYMid slice"
+                mask="url(#kaseMask)"
+                style="opacity:1"/>
+              <!-- Dark overlay to deepen contrast -->
+              <rect x="-20" y="-10" width="560" height="520" fill="rgba(0,0,0,0.28)" mask="url(#kaseMask)"/>
+            </svg>
+          </div>
+
+          <!-- Row 4: description + CTAs -->
+          <div class="hero-bottom">
+            <p class="hero-desc">
+              LED ekran kiralamasından timecode ışık showlarına, dijital müze kurulumlarından sahne tekniğine — etkinliğinizi unutulmaz bir deneyime taşıyoruz.
+            </p>
+            <div class="hero-actions" style="margin-top:24px;">
+              <a href="#services" class="btn btn-primary">
+                Hizmetleri Keşfet
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#instagram" class="btn btn-ghost">Instagram'ı Gör</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ── -->
+    <section id="stats" aria-label="İstatistikler">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-num"><em>10</em>+</div>
+            <div class="stat-label">Yıl Deneyim</div>
+          </div>
+          <div class="stat-item reveal" style="transition-delay:.08s">
+            <div class="stat-num"><em>500</em>+</div>
+            <div class="stat-label">Başarılı Etkinlik</div>
+          </div>
+          <div class="stat-item reveal" style="transition-delay:.16s">
+            <div class="stat-num"><em>50</em>+</div>
+            <div class="stat-label">Müze & Deneyim Kurulumu</div>
+          </div>
+          <div class="stat-item reveal" style="transition-delay:.24s">
+            <div class="stat-num"><em>24</em>/7</div>
+            <div class="stat-label">Teknik Destek</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services" aria-labelledby="services-h">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Hizmetlerimiz</span>
+          <h2 id="services-h">Tek Çatı Altında<br>Tam Teknik Çözüm</h2>
+          <p>Planlama aşamasından kuruluma, etkinlik gününden sonraki teknik desteğe kadar her adımda yanınızdayız.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal" style="transition-delay:.05s">
+            <div class="service-icon blue">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0098FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><rect x="5" y="6" width="4" height="4" rx=".5"/><rect x="15" y="6" width="4" height="4" rx=".5"/><rect x="10" y="6" width="4" height="4" rx=".5"/></svg>
+            </div>
+            <h3 class="service-card-title">LED Ekran Kiralama</h3>
+            <p class="service-card-desc">İç ve dış mekan etkinlikleriniz için yüksek çözünürlüklü LED ekranlar. Konser, fuar, kurumsal etkinlik ve açık hava organizasyonları için doğru piksel aralığında çözümler.</p>
+            <div class="service-tags">
+              <span class="tag blue">Indoor P2 / P3</span>
+              <span class="tag blue">Outdoor P4 / P6</span>
+              <span class="tag">Kurulum Dahil</span>
+              <span class="tag">Teknik Ekip</span>
+            </div>
+          </div>
+
+          <div class="service-card reveal" style="transition-delay:.1s">
+            <div class="service-icon orange">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E05A00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="service-card-title">Sahne Teknik Hizmetleri</h3>
+            <p class="service-card-desc">Profesyonel ses sistemleri, truss yapıları, lifting ekipmanları ve sahne kurulumu. Etkinliğinizin büyüklüğüne göre ölçeklenebilir teknik altyapı çözümleri.</p>
+            <div class="service-tags">
+              <span class="tag orange">Ses Sistemi</span>
+              <span class="tag orange">Truss & Rigging</span>
+              <span class="tag">Sahne Kurulumu</span>
+              <span class="tag">Jeneratör</span>
+            </div>
+          </div>
+
+          <div class="service-card reveal" style="transition-delay:.15s">
+            <div class="service-icon blue">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0098FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/><circle cx="12" cy="7" r="1.5" fill="#0098FF"/></svg>
+            </div>
+            <h3 class="service-card-title">Dijital Müze & Deneyim Merkezi</h3>
+            <p class="service-card-desc">Müzeler, ziyaretçi merkezleri ve marka deneyim alanları için interaktif dijital kurulumlar. Yazılım geliştirmeden donanım entegrasyonuna kadar anahtar teslim çözümler.</p>
+            <div class="service-tags">
+              <span class="tag blue">İnteraktif Ekranlar</span>
+              <span class="tag blue">Projeksiyon Mapping</span>
+              <span class="tag">Yazılım Geliştirme</span>
+              <span class="tag">Donanım Entegrasyonu</span>
+            </div>
+          </div>
+
+          <div class="service-card reveal" style="transition-delay:.2s">
+            <div class="service-icon orange">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E05A00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3 class="service-card-title">Işık Tasarımı & Timecode Show</h3>
+            <p class="service-card-desc">Müzik ve görsellerle senkronize timecode ışık showları, sahne aydınlatma tasarımı ve DMX programlaması. Her ritmi ışıkla anlatan atmosferik deneyimler.</p>
+            <div class="service-tags">
+              <span class="tag orange">Timecode Senkron</span>
+              <span class="tag orange">DMX Programlama</span>
+              <span class="tag">Moving Head</span>
+              <span class="tag">Laser Show</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESS ── -->
+    <section id="process" aria-labelledby="process-h">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="eyebrow">Nasıl Çalışırız</span>
+          <h2 id="process-h">Fikirden Sahneye<br>Üç Adımda</h2>
+          <p>Etkinliğinizin gereksinimlerini anlayarak başlıyor, kusursuz bir uygulamayla tamamlıyoruz.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal" style="transition-delay:.05s">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3>Keşif & Planlama</h3>
+              <p>Etkinlik detaylarınızı, mekan özelliklerini ve bütçenizi değerlendirerek size özel teknik çözüm paketi hazırlıyoruz.</p>
+            </div>
+          </div>
+          <div class="process-step reveal" style="transition-delay:.15s">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3>Kurulum & Test</h3>
+              <p>Deneyimli ekibimizle tüm ekipmanları etkinlik öncesinde kurarak kapsamlı testler yapıyor, sıfır sürpriz garantisi sunuyoruz.</p>
+            </div>
+          </div>
+          <div class="process-step reveal" style="transition-delay:.25s">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3>Canlı Destek & Sökme</h3>
+              <p>Etkinlik boyunca sahada teknik destek ekibimiz hazır bekliyor. Etkinlik sonunda eksiksiz sökme ile sorumluluğumuzu tamamlıyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── INSTAGRAM ── -->
+    <section id="instagram" aria-labelledby="instagram-h">
+      <div class="container ig-inner">
+        <div class="ig-top reveal">
+          <div>
+            <span class="eyebrow">Instagram</span>
+            <h2 id="instagram-h">Anlık Kareler<br>& Sahne Arkası</h2>
+          </div>
+        </div>
+
+        <!-- Gerçek Instagram gönderileri — fotoğraf odaklı görünüm -->
+        <div class="ig-grid reveal">
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DOtiBgciFSL/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 1"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DOtiBgciFSL/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DN_VZIQCJt8/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 2"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DN_VZIQCJt8/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DAsjnOhoCDK/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 3"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DAsjnOhoCDK/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DDxC4pGIOdI/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 4"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DDxC4pGIOdI/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DEBGiEAoxQ_/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 5"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DEBGiEAoxQ_/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+          <div class="ig-post-outer">
+            <div class="ig-post-wrap">
+              <iframe src="https://www.instagram.com/p/DJKHuAuovYH/embed/" scrolling="no" allowtransparency="true" loading="lazy" title="Instagram gönderi 6"></iframe>
+              <div class="ig-post-hover"><a href="https://www.instagram.com/p/DJKHuAuovYH/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram'da Gör</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA row -->
+        <div class="ig-cta-row reveal">
+          <div class="ig-handle-display">
+            <div class="ig-avatar-ring">
+              <div class="ig-avatar-inner">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="ig-name" id="ig-name-display">Visual Arts Event Solutions</div>
+              <div class="ig-sub" id="ig-sub-display">Instagram'da takip edin</div>
+            </div>
+          </div>
+          <a id="ig-follow-btn" href="#" target="_blank" rel="noopener" class="btn-ig-follow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram'da Takip Et
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section id="faq" aria-labelledby="faq-h">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="eyebrow">Sıkça Sorulan Sorular</span>
+          <h2 id="faq-h">Aklınızdaki<br>Sorular</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              LED ekran kiralama için ne kadar öncesinden rezervasyon yapmalıyım?
+              <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Yoğun sezonlarda (yaz festivalleri, yılbaşı dönemi) en az 4–6 hafta öncesinden rezervasyon öneriyoruz. Acil talepler için ekipman stoğumuza göre değerlendirme yapıyor, mümkün olan en kısa sürede geri dönüş sağlıyoruz.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Hangi tür mekanlar için LED ekran kurulumu yapıyorsunuz?
+              <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Konser salonları, spor arenalar, fuar alanları, kongre merkezleri, açık hava alanları, düğün salonları ve kurumsal toplantı mekanlarında kurulum yapıyoruz. Mekan ne olursa olsun, ön keşif ile en uygun çözümü öneriyoruz.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Dijital müze kurulumları ne kadar sürede tamamlanıyor?
+              <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Küçük çaplı bir interaktif alan 2–4 hafta, kapsamlı bir dijital müze veya deneyim merkezi kurulumu ise 2–6 ay arasında sürebilir. İlk görüşmede projenize özel zaman çizelgesi hazırlıyoruz.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Etkinlik süresince teknik ekip sahada mı bulunuyor?
+              <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Evet, tüm hizmetlerimizde etkinlik boyunca sahada deneyimli teknik operatörlerimiz hazır bulunur. Yedek ekipman stoğumuzla etkinliğinizin aksamamasını garanti ediyoruz.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Timecode Show için içerik hazırlamamız gerekiyor mu?
+              <span class="faq-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Hayır. Müzik dosyalarınızı ve konsept tercihlerinizi bizimle paylaşmanız yeterli. DMX programlama ve timecode senkronizasyonunu ekibimiz tam olarak üstleniyor. İstenirse içerik tasarımı konusunda da danışmanlık sunuyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section id="cta" aria-label="İletişime geç">
+      <div class="container">
+        <div class="cta-box reveal">
+          <span class="eyebrow">Hemen Başlayalım</span>
+          <h2>Etkinliğinizi Birlikte<br>Tasarlayalım</h2>
+          <p>Projenizin detaylarını paylaşın, size özel teknik çözüm ve fiyat teklifi hazırlayalım. İlk görüşme tamamen ücretsiz.</p>
+          <div class="cta-actions">
+            <a href="mailto:hakansevinc@visualartsolution.com" class="btn-white">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Teklif İste
+            </a>
+            <a href="tel:+905388678570" class="btn-white-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.9a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17z"/></svg>
+              0538 867 85 70
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo" aria-label="Visual Arts Event Solutions">
+            <img src="Logo.svg" alt="Visual Arts Event Solutions" width="180" height="52">
+          </a>
+          <p>Sahne tekniğinden dijital deneyim merkezlerine, LED ekran kiralamasından timecode ışık showlarına — görüntü ve ışığın kesiştiği noktadayız.</p>
+          <div class="social-links">
+            <a href="#" id="ig-footer-link" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Hizmetler</h4>
+          <ul>
+            <li><a href="#services">LED Ekran Kiralama</a></li>
+            <li><a href="#services">Sahne Teknik Hizmetleri</a></li>
+            <li><a href="#services">Dijital Müze Kurulumu</a></li>
+            <li><a href="#services">Işık Tasarımı</a></li>
+            <li><a href="#services">Timecode Show</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Şirket</h4>
+          <ul>
+            <li><a href="#process">Nasıl Çalışırız</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#faq">SSS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>İletişim</h4>
+          <ul>
+            <li><a href="mailto:hakansevinc@visualartsolution.com">hakansevinc@visualartsolution.com</a></li>
+            <li><a href="tel:+905388678570">0538 867 85 70</a></li>
+            <li><a href="https://maps.google.com/?q=Sultan+Selim+Mah+Bayraktar+Cad+No+20A+Kağıthane+İstanbul" target="_blank" rel="noopener">Sultan Selim Mah. Bayraktar Cad.<br>No: 20A Kağıthane / İstanbul</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Visual Arts Event Solutions. Tüm hakları saklıdır.</p>
+        <p>Kağıthane / İstanbul</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Instagram Modal ── -->
+  <div class="modal-backdrop" id="igModal" role="dialog" aria-modal="true" aria-labelledby="igModalTitle">
+    <div class="modal">
+      <button class="modal-close" id="igModalClose" aria-label="Kapat">×</button>
+      <h3 id="igModalTitle">Instagram Hesabını Bağla</h3>
+      <p>Instagram kullanıcı adınızı girin. Profil linkiniz ve takip butonu aktif olacak.</p>
+      <div class="form-group">
+        <label for="igHandleInput">Instagram Kullanıcı Adı</label>
+        <input type="text" id="igHandleInput" placeholder="@kullaniciadi" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="igModalCancel">Vazgeç</button>
+        <button class="btn btn-ig" id="igModalSave">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Bağla
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script defer>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+
+    // Reveal
+    const obs = new IntersectionObserver(entries =>
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }),
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(b => { b.setAttribute('aria-expanded','false'); b.nextElementSibling.classList.remove('open'); });
+        if (!isOpen) { btn.setAttribute('aria-expanded','true'); btn.nextElementSibling.classList.add('open'); }
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#') return;
+        const t = document.querySelector(href);
+        if (!t) return;
+        e.preventDefault();
+        window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+      });
+    });
+
+    // Instagram — handle bağlama
+    const igModal       = document.getElementById('igModal');
+    const igHandleInput = document.getElementById('igHandleInput');
+    const igFooterLink  = document.getElementById('ig-footer-link');
+    const igFollowBtn   = document.getElementById('ig-follow-btn');
+    const igNameDisp    = document.getElementById('ig-name-display');
+    const igSubDisp     = document.getElementById('ig-sub-display');
+
+    function applyHandle(handle) {
+      const clean = handle.replace(/^@/, '').trim();
+      const url   = 'https://www.instagram.com/' + clean + '/';
+      igFollowBtn.href = url;
+      if (igFooterLink) igFooterLink.href = url;
+      igNameDisp.textContent = '@' + clean;
+      igSubDisp.textContent  = 'Instagram\'da takip edin';
+    }
+
+    function loadHandle() {
+      const saved = localStorage.getItem('vas_ig_handle') || 'vaes.turkey';
+      applyHandle(saved);
+    }
+
+    function openModal() {
+      const saved = localStorage.getItem('vas_ig_handle');
+      igHandleInput.value = saved ? '@' + saved : '';
+      igModal.classList.add('open');
+      setTimeout(() => igHandleInput.focus(), 100);
+    }
+
+    function closeModal() { igModal.classList.remove('open'); }
+
+    function saveHandle() {
+      const val = igHandleInput.value.replace(/^@/, '').trim();
+      if (!val) return;
+      localStorage.setItem('vas_ig_handle', val);
+      applyHandle(val);
+      closeModal();
+    }
+
+    // Avatar'a çift tıklayınca handle değiştirilebilir (gizli admin özelliği)
+    document.querySelector('.ig-avatar-ring').addEventListener('dblclick', openModal);
+    document.getElementById('igModalClose').addEventListener('click', closeModal);
+    document.getElementById('igModalCancel').addEventListener('click', closeModal);
+    document.getElementById('igModalSave').addEventListener('click', saveHandle);
+    igHandleInput.addEventListener('keydown', e => { if (e.key === 'Enter') saveHandle(); });
+    igModal.addEventListener('click', e => { if (e.target === igModal) closeModal(); });
+
+    loadHandle();
+  </script>
+</body>
+</html>

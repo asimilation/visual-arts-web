@@ -1,0 +1,11 @@
+# Screenshot files (geliştirme sırasında oluştu, repoya gerek yok)
+*.png
+!Logo.svg
+!kaşe.svg
+!kaşe-wide.svg
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
